@@ -11,6 +11,7 @@ import java.util.List;
 public class BookController {
     @GetMapping("/book")
     public List<Book> getBooks() {
+
         Book book = new Book("Java", "ISBN1", 1);
         Book book1 = new Book("Java2", "ISBN2", 2);
         Book book2 = new Book("Java3", "ISBN3", 3);
@@ -21,5 +22,7 @@ public class BookController {
         books.add(book2);
         books.add(book3);
         return books;
+
     }
+
 }
